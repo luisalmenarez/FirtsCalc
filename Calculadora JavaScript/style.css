@@ -1,0 +1,80 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to left, #5F0A87, #000);
+}
+
+header{
+    background: linear-gradient(90deg, rgba(51,37,57,1) 0%, rgb(67, 8, 95) 35%, rgba(51,37,57,1) 100%);    
+    border-radius: 10px;
+    text-align: center;    
+    color: white;
+    padding: 0.7rem 0.5rem;
+}
+
+.calc{
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+    min-height: 100vh;
+    grid-template-columns:repeat(4, 100px); 
+    grid-template-rows:minmax(120px, auto) repeat(5, 100px);
+
+}
+
+.calc > button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: 1px solid #DEE5E5;
+    outline: none;
+    background-color: rgba(255, 255, 255, .55);
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(65, 51, 122, .100);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.output .display{
+    color: black;
+    font-size: 1.91rem;
+    text-align: right; 
+}
+
+.calc > button:hover{
+    background-color: #F0F7EE;
+}
+
+footer {
+    background-color: #222;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #5F0A87;
+}
